@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoliostars Bangladesh · youth for awareness</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- recruitment notice -->
+  <div class="recruit-banner">
+    <i class="fas fa-bullhorn"></i> WE ARE RECRUITING MEMBERS! join our youth movement · 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUvfbx6IDYcsvqxyItp76j9rhmLzdWD40yLQZlhdQ8vvpIog/viewform" target="_blank" style="color:#1e3b4c; text-decoration:underline;">apply as volunteer <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <h1>SCOLIO<span style="-webkit-text-fill-color: #1e4a66;">STARS</span></h1>
+        <span>bangladesh chapter · youth for awareness</span>
+      </div>
+      <div class="nav-cta">
+        <a href="#volunteer" class="btn"><i class="fas fa-star"></i> join us</a>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Straight spines, bright futures</h2>
+        <p>We are a youth-led non-profit spreading scoliosis awareness, early detection, and support across Bangladesh. Join our star community.</p>
+        <div class="hero-buttons">
+          <a href="#member" class="btn-primary"><i class="fas fa-hand-holding-heart"></i> member login</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUvfbx6IDYcsvqxyItp76j9rhmLzdWD40yLQZlhdQ8vvpIog/viewform" target="_blank" class="btn-outline"><i class="fas fa-user-plus"></i> volunteer</a>
+        </div>
+      </div>
+      <div class="hero-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+    </section>
+
+    <!-- mission & about -->
+    <section>
+      <h2 class="section-title">Our mission</h2>
+      <div class="cards-grid">
+        <div class="card"><i class="fas fa-bullseye"></i><h3>Youth-led</h3><p>Powered by students & young professionals who understand the need for early scoliosis awareness.</p></div>
+        <div class="card"><i class="fas fa-hand-holding-heart"></i><h3>Community support</h3><p>Free posture guides, meetings, and a safe space to share experiences.</p></div>
+        <div class="card"><i class="fas fa-graduation-cap"></i><h3>School outreach</h3><p>We conduct workshops and screening camps in schools across Bangladesh.</p></div>
+      </div>
+    </section>
+
+    <!-- what is scoliosis / vision -->
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 3rem 0;">
+      <div style="flex:2; min-width:260px">
+        <h2 class="section-title">About scoliosis</h2>
+        <p style="font-size:1.2rem">Scoliosis is a sideways curvature of the spine that most often is diagnosed in adolescents. While it can be mild, early detection prevents progression. Our vision is a Bangladesh where no teen feels alone with scoliosis.</p>
+      </div>
+      <div style="flex:1; background: var(--primary-light); border-radius: 2rem; padding: 2rem; color: white;">
+        <i class="fas fa-eye" style="font-size:2rem"></i>
+        <h3 style="margin: 0.5rem 0">Our vision</h3>
+        <p>Empower every scoliosis warrior with knowledge, care, and a community that shines.</p>
+      </div>
+    </div>
+
+    <!-- departments -->
+    <h2 class="section-title">Departments</h2>
+    <div class="dept-tags">
+      <span class="dept-tag"><i class="far fa-newspaper"></i> Awareness & content</span>
+      <span class="dept-tag"><i class="fas fa-laptop"></i> Tech & innovation</span>
+      <span class="dept-tag"><i class="fas fa-calendar-alt"></i> Events & outreach</span>
+      <span class="dept-tag"><i class="fas fa-heartbeat"></i> Peer support</span>
+      <span class="dept-tag"><i class="fas fa-chart-line"></i> Research & impact</span>
+    </div>
+
+    <!-- events & impact -->
+    <h2 class="section-title">Upcoming events</h2>
+    <div class="event-item">
+      <span><i class="fas fa-video"></i> <strong>Online awareness session</strong> · 15 April 2025</span>
+      <span class="event-badge">FREE</span>
+    </div>
+    <div class="event-item" style="margin-top:1rem;">
+      <span><i class="fas fa-users"></i> <strong>Monthly meetup (new members)</strong> · 22 April 2025</span>
+      <span class="event-badge">zoom</span>
+    </div>
+
+    <!-- impact counter (people reached) -->
+    <div class="impact-wrap">
+      <div class="impact-item"><span class="impact-number" id="peopleReached">12,800</span><div class="impact-label">people reached</div></div>
+      <div class="impact-item"><span class="impact-number">25+</span><div class="impact-label">school workshops</div></div>
+      <div class="impact-item"><span class="impact-number">450+</span><div class="impact-label">active youth</div></div>
+    </div>
+
+    <!-- contact & volunteer link + form -->
+    <h2 class="section-title">Contact & join</h2>
+    <div class="contact-form" id="volunteer">
+      <p style="margin-bottom:1.5rem; font-size:1.2rem;"><i class="fas fa-envelope" style="color:var(--primary);"></i> Email us: <strong>mehrinsoha160@gmail.com</strong> · or leave a message:</p>
+      <form id="contactForm">
+        <div class="form-group"><input type="text" placeholder="Your name" required></div>
+        <div class="form-group"><input type="email" placeholder="Email address" required></div>
+        <div class="form-group"><textarea rows="3" placeholder="Tell us how you'd like to help..."></textarea></div>
+        <button class="contact-btn" type="submit"><i class="fas fa-paper-plane"></i> Send message</button>
+      </form>
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUvfbx6IDYcsvqxyItp76j9rhmLzdWD40yLQZlhdQ8vvpIog/viewform" target="_blank" class="btn-primary" style="background: var(--secondary); color:#1e3b4c;"><i class="fas fa-clipboard-list"></i> Apply as volunteer (Google form)</a>
+      </div>
+    </div>
+
+    <!-- ========== MEMBER FEATURES (login + dashboard) ========== -->
+    <section class="member-section" id="member">
+      <h2 style="font-size:2rem; display: flex; align-items: center; gap:10px;"><i class="fas fa-id-card"></i> Member portal</h2>
+      <!-- login area (visible when not logged in) -->
+      <div id="loginArea" class="login-box">
+        <h3> <i class="fas fa-lock"></i> Member login</h3>
+        <p style="margin-bottom:1rem">(demo: user = <strong>star</strong> / pass = <strong>scoliosis</strong>)</p>
+        <input type="text" id="username" placeholder="username" value="star">
+        <input type="password" id="password" placeholder="password" value="scoliosis">
+        <button class="btn-primary" id="loginBtn" style="width:100%;"><i class="fas fa-sign-in-alt"></i> Login</button>
+        <p style="margin-top:1rem; font-size:0.9rem;">No account? <a href="#volunteer">volunteer now</a></p>
+      </div>
+
+      <!-- member dashboard (hidden by default) -->
+      <div id="memberDashboard" class="member-dashboard">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+          <h3><i class="fas fa-star" style="color: var(--secondary);"></i> Welcome, <span id="displayName">Star</span>!</h3>
+          <button class="logout-btn" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> logout</button>
+        </div>
+        <div class="dashboard-grid">
+          <!-- assigned tasks -->
+          <div class="card">
+            <i class="fas fa-tasks"></i>
+            <h4>Assigned tasks</h4>
+            <ul class="task-list">
+              <li><i class="fas fa-check-circle" style="color:var(--secondary);"></i> Share an awareness post</li>
+              <li><i class="fas fa-check-circle"></i> Attend 15 Apr session</li>
+              <li><i class="fas fa-check-circle"></i> Complete posture self‑check</li>
+              <li><i class="fas fa-star"></i> Invite 2 friends</li>
+            </ul>
+          </div>
+          <!-- growth & engagement (points) -->
+          <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h4>your engagement</h4>
+            <p style="font-size:2rem; font-weight:700; color:var(--primary);">580 ⭐</p>
+            <p>next badge at 750 pts</p>
+            <progress value="580" max="750" style="width:100%; height:12px; border-radius:20px;"></progress>
+          </div>
+          <!-- awareness quiz with marks -->
+          <div class="card quiz-box">
+            <i class="fas fa-question-circle"></i>
+            <h4>quick awareness quiz</h4>
+            <div id="quiz">
+              <p>1. Scoliosis is most common in:</p>
+              <label><input type="radio" name="q1" value="adults"> adults</label><br>
+              <label><input type="radio" name="q1" value="teens"> adolescents</label><br>
+              <p>2. Which is a scoliosis sign?</p>
+              <label><input type="radio" name="q2" value="fever"> fever</label><br>
+              <label><input type="radio" name="q2" value="shoulder"> uneven shoulders</label><br>
+              <button class="btn-primary" id="submitQuiz" style="margin-top:0.8rem; padding:0.4rem 1.2rem;">submit</button>
+              <span id="quizScore" style="margin-left:1rem; font-weight:600;"></span>
+            </div>
+          </div>
+          <!-- posture self-check tool -->
+          <div class="card selfcheck">
+            <i class="fas fa-user-check"></i>
+            <h4>posture self‑check</h4>
+            <label><input type="checkbox" id="sign1"> visible spinal curve</label>
+            <label><input type="checkbox" id="sign2"> uneven hips</label>
+            <label><input type="checkbox" id="sign3"> shoulder imbalance</label>
+            <button id="checkPosture" class="btn-outline" style="margin-top:1rem;">check signs</button>
+            <p id="postureResult" style="margin-top:0.8rem; font-style:italic;"></p>
+          </div>
+        </div>
+        <!-- extra checklist and impact -->
+        <div style="background:white; border-radius:2rem; padding:1.5rem; margin-top:1.5rem;">
+          <p><i class="fas fa-clipboard-list"></i> <strong>awareness checklist</strong> – talk to a friend, share a fact, do the self‑check.</p>
+          <p><i class="fas fa-globe-asia"></i> impact today: <strong>12.8k</strong> people reached (you helped!)</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-email"><i class="fas fa-envelope"></i> mehrinsoha160@gmail.com</p>
+      <p>Scoliostars Bangladesh Chapter — youth for scoliosis awareness. 100% non‑profit.</p>
+      <p>© 2025 all stars reserved</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
