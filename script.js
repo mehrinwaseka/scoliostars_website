@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // login simulation
+
   const loginArea = document.getElementById('loginArea');
   const dashboard = document.getElementById('memberDashboard');
   const loginBtn = document.getElementById('loginBtn');
@@ -8,11 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const passwordInput = document.getElementById('password');
   const displayNameSpan = document.getElementById('displayName');
 
-  // demo login
   function doLogin() {
     const user = usernameInput.value.trim();
     const pass = passwordInput.value.trim();
-    if (user && pass === 'scoliosis') {   // simple demo: any username + password = scoliosis
+    if (user && pass === 'scoliosis') {   
       loginArea.style.display = 'none';
       dashboard.style.display = 'block';
       displayNameSpan.textContent = user || 'Star';
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // quiz logic
   const submitQuiz = document.getElementById('submitQuiz');
   if (submitQuiz) {
     submitQuiz.addEventListener('click', function() {
@@ -42,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // posture self-check
   const checkPosture = document.getElementById('checkPosture');
   if (checkPosture) {
     checkPosture.addEventListener('click', function() {
@@ -74,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 10);
   }
 
-  // contact form prevent page reload
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
